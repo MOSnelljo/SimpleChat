@@ -1,21 +1,29 @@
+
 <head>
 
-<title>Chat App</title>
+<title>Crud Application</title>
+ <link href="metro-icons.css" rel="stylesheet">
+    <script>
+        function showDialog(id){
+            var dialog = $("#"+id).data('dialog');
+  
+            if (!dialog.element.data('opened')) {
+                dialog.open();
+            } else {
+                dialog.close();
+            }
+        } 
+    </script>
 </head>
 
-<body style = "background-color:#E8E8E8  ">
-
-
-
-
-<div class="page-header">
+<body>
+<div class="container">
 <center>
-	<h1>
- 		<b>Simple Chat Application</b>
-	</h1>
+<h3>CRUD app</h3><br>
+<small> Can Create Read Update and Delete.</small>
 </center>
+{{> addprofiles}}
+{{> profiles}} <!-- bali code sa include -->
+<p class="text-muted fg-grayLight">A slighly edited simple CRUD application</p>
 </div>
-
-{{> appChat}}
-
 </body>

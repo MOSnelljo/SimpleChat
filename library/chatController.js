@@ -1,1 +1,0 @@
-Messagesx = new Mongo.Collection("Messages")
